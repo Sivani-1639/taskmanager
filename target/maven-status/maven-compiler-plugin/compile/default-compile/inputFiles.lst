@@ -1,0 +1,16 @@
+C:\Users\Sivani\Desktop\FEWD\taskmanager\src\main\java\com\example\taskmanager\config\CorsConfig.java
+C:\Users\Sivani\Desktop\FEWD\taskmanager\src\main\java\com\example\taskmanager\config\SecurityConfig.java
+C:\Users\Sivani\Desktop\FEWD\taskmanager\src\main\java\com\example\taskmanager\controller\AuthController.java
+C:\Users\Sivani\Desktop\FEWD\taskmanager\src\main\java\com\example\taskmanager\controller\StreamController.java
+C:\Users\Sivani\Desktop\FEWD\taskmanager\src\main\java\com\example\taskmanager\controller\TaskController.java
+C:\Users\Sivani\Desktop\FEWD\taskmanager\src\main\java\com\example\taskmanager\dto\AuthDtos.java
+C:\Users\Sivani\Desktop\FEWD\taskmanager\src\main\java\com\example\taskmanager\dto\TaskDtos.java
+C:\Users\Sivani\Desktop\FEWD\taskmanager\src\main\java\com\example\taskmanager\model\Task.java
+C:\Users\Sivani\Desktop\FEWD\taskmanager\src\main\java\com\example\taskmanager\model\TaskStatus.java
+C:\Users\Sivani\Desktop\FEWD\taskmanager\src\main\java\com\example\taskmanager\model\User.java
+C:\Users\Sivani\Desktop\FEWD\taskmanager\src\main\java\com\example\taskmanager\repository\TaskRepository.java
+C:\Users\Sivani\Desktop\FEWD\taskmanager\src\main\java\com\example\taskmanager\repository\UserRepository.java
+C:\Users\Sivani\Desktop\FEWD\taskmanager\src\main\java\com\example\taskmanager\security\JwtService.java
+C:\Users\Sivani\Desktop\FEWD\taskmanager\src\main\java\com\example\taskmanager\service\TaskService.java
+C:\Users\Sivani\Desktop\FEWD\taskmanager\src\main\java\com\example\taskmanager\service\UserService.java
+C:\Users\Sivani\Desktop\FEWD\taskmanager\src\main\java\com\example\taskmanager\TaskmanagerApplication.java
