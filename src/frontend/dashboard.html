@@ -1,0 +1,94 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Dashboard - TaskManager</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="style.css" rel="stylesheet">
+</head>
+<body>
+  <div class="container" style="padding-top:16px">
+    <div class="header">
+      <div class="brand"><div class="logo"></div> TaskManager</div>
+      <div class="toolbar">
+        <span id="hello" class="helper"></span>
+        <button id="logoutBtn" class="btn secondary">Log out</button>
+      </div>
+    </div>
+
+    <div class="card" style="margin-bottom:16px">
+      <div class="toolbar">
+        <div class="search"><input id="search" class="input" placeholder="Search tasks by title or description"></div>
+        <select id="statusFilter" class="input" style="max-width:200px">
+          <option value="">All statuses</option>
+          <option value="TODO">To do</option>
+          <option value="IN_PROGRESS">In progress</option>
+          <option value="DONE">Done</option>
+        </select>
+        <button id="newTaskBtn" class="btn">+ New Task</button>
+      </div>
+    </div>
+
+    <div class="card">
+      <table class="table" id="taskTable">
+        <thead>
+          <tr>
+            <th>Task</th>
+            <th>Due</th>
+            <th>Status</th>
+            <th style="width:180px">Actions</th>
+          </tr>
+        </thead>
+        <tbody id="taskBody"></tbody>
+      </table>
+      <div class="empty" id="emptyState" style="display:none">No tasks yet. Create your first task with the button above.</div>
+    </div>
+
+    <p class="footer-note">Tasks save instantly. Data is stored per user. </p>
+  </div>
+
+  <!-- Modal -->
+  <div id="modal" style="position:fixed;inset:0;display:none;align-items:center;justify-content:center;background:rgba(0,0,0,.55);padding:12px">
+    <div class="card" style="width:min(640px,100%);">
+      <h3 id="modalTitle" style="margin-top:0">New Task</h3>
+      <form id="taskForm">
+        <div class="field">
+          <label>Title</label>
+          <input class="input" type="text" id="task-title" required>
+        </div>
+        <div class="field">
+          <label>Description</label>
+          <textarea class="input" id="task-desc" rows="3"></textarea>
+        </div>
+        <div class="row">
+          <div class="col">
+            <div class="field">
+              <label>Due date (UTC)</label>
+              <input class="input" type="datetime-local" id="task-due">
+            </div>
+          </div>
+          <div class="col">
+            <div class="field">
+              <label>Status</label>
+              <select class="input" id="task-status">
+                <option value="TODO">To do</option>
+                <option value="IN_PROGRESS">In progress</option>
+                <option value="DONE">Done</option>
+              </select>
+            </div>
+          </div>
+        </div>
+        <div class="toolbar" style="justify-content:flex-end">
+          <button type="button" id="cancelModal" class="btn secondary">Cancel</button>
+          <button type="submit" class="btn" id="saveTaskBtn">Save</button>
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <script src="app.js"></script>
+  <script>
+    initDashboard();
+  </script>
+</body>
+</html>
